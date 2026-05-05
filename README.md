@@ -4,7 +4,7 @@ Description:
 
 The Anemometer Attic is a mobile application for collectors of mining antiquities, historians of industrial ventilation, and keepers of atmospheric measurement heritage, dedicated to cataloging the mechanical instruments used to measure airflow, draft, and pressure in mines, tunnels, and early HVAC systems that have been replaced by digital thermal anemometers and ultrasonic sensors.
 
-Systematize your collection of the "sentinels of the shaft"—from delicate fan-type anemometers with silvered dials to heavy-duty Biram-style meters, from liquid-filled U-tube manometers to specialized pocket-sized wind meters for early aviation and meteorological use, from "air-current meters" with ivory scales to antique hygrometers used for measuring underground humidity.
+Systematize your collection of the "sentinels of the shaft" — from delicate fan-type anemometers with silvered dials to heavy-duty Biram-style meters, from liquid-filled U-tube manometers to specialized pocket-sized wind meters for early aviation and meteorological use, from "air-current meters" with ivory scales to antique hygrometers used for measuring underground humidity.
 
 Create a digital archive of ventilation history by recording the instrument type, manufacturer, vane diameter, measurement range, era, and the history of each specimen.
 
