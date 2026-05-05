@@ -1,0 +1,42 @@
+1. DESIGN PHILOSOPHY
+Visual: "Shaft & Surface" — the UI draws from two worlds the instruments lived between: the underground mine shaft and the open atmosphere above it. Deep slate surfaces for primary navigation, clean bright whites for content and specimen cards — as if you're moving from the tunnel into the light. The design language is modern industrial: think a well-designed mining company's internal tools dashboard, or a contemporary weather instrumentation brand. Structured, functional, with just enough warmth to feel like a curated collection rather than a database.
+Mood: structured, atmospheric, methodical, depth-aware, quietly technical.
+Important: No cave textures, no coal-dust effects, no lantern-glow gradients. The instruments measured something invisible — air itself — and the UI should carry that same quality of clarity and transparency. Clean surfaces, deliberate spacing, nothing decorative that doesn't also do work.
+
+2. COLORS
+#F3F4F6 — Main background (ventilation grey — cool, neutral, like a surveyed surface)
+#111827 — Primary text & high-contrast elements (shaft black — deep, cool-tinted)
+#FFFFFF — Secondary panels / card surfaces
+#6B7280 — Secondary text / muted labels
+#0F766E — Primary accent (mine teal — the color of oxidized copper vanes, verdigris on brass housings, and the green-blue of a well-lit shaft. Cool, precise, industrial)
+#E5E7EB — Outline / stroke / dividers
+#92400E — Secondary accent (instrument amber — the warm brown of mahogany-cased instruments, ivory scales, and aged brass. Used for era tags, material indicators, and provenance badges)
+#DC2626 — Critical errors only
+Important: Teal is the action and selection color — interactive elements, selected states, primary buttons, active nav. Amber is purely informational — material type, era, provenance origin. Never on the same element. The cool-grey background gives the whole UI a slight atmospheric quality, like measured air — present but invisible.
+
+3. TYPOGRAPHY
+Display / Headings: Space Grotesk (weight 600–700) — geometric, slightly technical, with just enough personality to feel curated rather than corporate. Used for instrument names on detail views, section headers, and the app title. Has a faint mechanical quality that references the vane and dial geometry of the instruments themselves.
+Body / Descriptions: Inter (weight 300–400) — neutral, precise, invisible in the best way. For all prose: condition notes, mine history, airflow specs.
+Monospace / Identifiers: JetBrains Mono — for archive codes like ANA-CASELLA-BIRAM-1903-GBR-COLLIERY-044, measurement ranges (0–5,000 FPM), vane diameters (76 mm), and all structured technical fields.
+Important: Space Grotesk at 20px and above only — it earns its character at large sizes, becomes unremarkable below that threshold. All labels, pills, and navigation use Inter. Mono fields should feel like instrument readouts, not footnotes — give them space to breathe.
+
+4. SURFACE & TEXTURE LANGUAGE
+
+Backgrounds: flat cool grey — no grain, no depth effects, no gradient horizon
+Cards: pure white with a 1px border at #E5E7EB and 10px corner radius — clean specimen documentation cards
+Vane rotation motif: each list card features a small SVG — a minimal top-down view of a rotating anemometer vane wheel, with the number of cups or blades matching the instrument type (3-cup, 4-vane, fan-type). The rotation arc is rendered in teal for operational instruments, amber for display-only condition. This is the primary visual differentiator per card.
+Measurement range badge: each card shows the rated airflow range in JetBrains Mono — 0–3,000 FPM, 0–10 m/s — in a small pill with a cool grey border
+Photography: instrument photography on white — vane assembly forward, dial face visible. No staging, no props, overhead or three-quarter view where possible
+Provenance tag: small pill showing the originating mine, tunnel, or institution — Rhondda Colliery, Metropolitan Railway, US Bureau of Mines — in teal at 10% opacity fill with full teal text
+
+
+5. INTERACTION PRINCIPLES
+
+Transitions: 180–220ms ease-out — brisk and clean, like a vane responding to airflow
+Selected state: teal left-border (3px) + faint #F0FDFB background tint on active cards
+Empty states: NO INSTRUMENTS IN THIS ATTIC YET. in JetBrains Mono, centered, muted — one line
+Loading: a thin teal progress bar at screen top — no spinner, no skeleton. Fast and minimal.
+Navigation: bottom tab bar — four tabs: Attic, Mine Map, Logbook, Settings. Active tab in teal.
+Measurement system toggle: a first-class setting — collectors split between imperial (FPM, CFM, inches WG) and metric (m/s, m³/h, Pa). Surface as a persistent toggle in Settings that reformats all measurement fields app-wide.
+
+Important: The vane wheel SVG on each list card is the identity mark of this app — no other collector app in this series uses a rotational motif. A spinning or partially-rotated vane in teal communicates operational quality immediately. A static or amber-tinted vane reads as display condition. This visual grammar should feel intuitive within minutes of first use.
